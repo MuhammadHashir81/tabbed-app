@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box{
+  min-width: 50vw;
+  min-height: 50vh;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.tabs{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab{
+  background: #ccc;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  /* border: 2px solid black; */
+  border-top:none ;
+  position: relative;
+  font-family: Poppins;
+  font-weight: bold;
+}
+
+.active-tab{
+  background-color: #fff;
+  border: none;
+}
+
+.contents{
+  position: relative;
+}
+
+.content{
+  position: relative;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  
+}
+.active-content{
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: all 1s ease-in-out;
+  font-family: Inter;
+  overflow: auto; 
+}
+
+.active-tab::after{
+  border-top: 2px solid gray;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom:0;
+  width: 100%;
+}
+
+/* Add margins to the table cells */
+.table-cell {
+  padding: 10px;
+  width: 50%; /* Divide evenly across three columns */
+  height:9.1vh;
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+/* Add lines between rows */
+table {
+  border-collapse: collapse;
+}
+
+.border {
+  border-top: 1px solid black;
+}
+.border-bottom{
+   border-bottom: 1px solid black;
+}
+
+.text-center{
+  text-align: center;
+}
+
